@@ -98,27 +98,22 @@ select::-ms-expand {
   transform: rotate(45deg)
 }
 
-
 .birthday {
   width: 100%;
   display: flex;
 }
 
 .gender {
-  margin: 0 15px;
+  margin: 0 5px;
 }
 
-.radio-area {
-  opacity: 0;
-}
-
-.radio-icon {
+.gender span {
   position: relative;
   color: #545658;
   padding: 3px 3px 3px 20px;
 }
 
-.radio-icon::before {
+.gender span::before {
   content: "";
   position: absolute;
   width: 15px;
@@ -130,7 +125,7 @@ select::-ms-expand {
   background-color: #fbfbfb;
 }
 
-.radio-icon::after {
+input[type=radio]:checked + span::after{
   content: "";
   position: absolute;
   width: 9px;
@@ -139,12 +134,6 @@ select::-ms-expand {
   top: 7px;
   border-radius: 50%;
   background-color: #017cbf;
-  opacity: 0;
-}
-
-/* 効いてない */
-input[type=radio]:checked + .radio-icon::after{
-  opacity: 1;
 }
 
 .position {
@@ -164,15 +153,15 @@ input[type=radio]:checked + .radio-icon::after{
 }
 
 .checkbox {
-  margin: 20px 0;
+  margin: 20px 10px;
 }
 
 .checkbox-text {
-  padding-left: 25px;
+  padding-left: 15px;
   position: relative;
 }
 
-.checkbox-text::before {
+.checkbox-text span::before {
   content: "";
   position: absolute;
   width: 15px;
@@ -183,8 +172,7 @@ input[type=radio]:checked + .radio-icon::after{
   background: #fbfbfb;
 }
 
-/* 効いてない */
-.checkbox input:checked + .checkbox-text::after {
+input[type=checkbox]:checked + span::after {
   content: "";
   position: absolute;
   top: 50%;
