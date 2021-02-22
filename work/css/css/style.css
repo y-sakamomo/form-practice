@@ -5,6 +5,11 @@
   background: #cff1ff;
 }
 
+.inner {
+  width: 600px;
+  margin: 0 auto;
+}
+
 .page-title {
   text-align: center;
   font-size: 28px;
@@ -13,8 +18,6 @@
 
 .form-wrap {
   background: #ecfaff;
-  width: 500px;
-  margin: 0 auto;
   padding: 50px;
 }
 
@@ -25,7 +28,7 @@
 }
 
 .info-group {
-  margin: 50px 0;
+  margin-bottom: 50px;
 }
 
 .info-title {
@@ -37,7 +40,7 @@
 }
 
 .info {
-  margin: 25px 0;
+  margin-top: 25px;
 }
 
 .label-text {
@@ -46,7 +49,7 @@
 }
 
 .required {
-  color: #e40000;;
+  color: #e40000;
 }
 
 input, select, button {
@@ -95,7 +98,7 @@ select::-ms-expand {
   right: 15px;
   border-bottom: 2px solid #d9d9d9;
   border-right: 2px solid #d9d9d9;
-  transform: rotate(45deg)
+  transform: rotate(45deg);
 }
 
 .birthday {
@@ -149,7 +152,7 @@ input[type=radio]:checked + span::after{
   right: 15px;
   border-bottom: 2px solid #d9d9d9;
   border-right: 2px solid #d9d9d9;
-  transform: rotate(45deg)
+  transform: rotate(45deg);
 }
 
 .checkbox {
@@ -194,6 +197,11 @@ input[type=checkbox]:checked + span::after {
   cursor: pointer;
   border-radius: 3px;
   border: 1px solid #d9d9d9;
+}
+
+.submit:active {
+  background: #fff;
+  color: #0170bf;
 }
 
 .end-link {
